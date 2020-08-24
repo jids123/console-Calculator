@@ -3,7 +3,7 @@ package icalculator;
 import java.util.Scanner;
 
 public class MainC extends MainO{
-    public static void main(String args[]){
+    public static void main(String[] args){
     boolean swetch = true;
         while(swetch) {
             MainO calculate = new MainO();
@@ -20,30 +20,12 @@ public class MainC extends MainO{
             int number3 = input3.nextInt();
 
             switch (number3) {
-                case 1 -> {
-                    calculate.add(number1, number2);
-                    break;
-                }
-                case 2 -> {
-                    calculate.subtract(number1, number2);
-                    break;
-                }
-                case 3 -> {
-                    calculate.multiply(number1, number2);
-                    break;
-                }
-                case 4 -> {
-                    calculate.divide(number1, number2);
-                    break;
-                }
-                case 5 -> {
-                    calculate.remainder(number1, number2);
-                    break;
-                }
-                default -> {
-                    System.out.println("calculation failed... I wonder why...");
-                    break;
-                }
+                case 1 -> calculate.add(number1, number2);
+                case 2 -> calculate.subtract(number1, number2);
+                case 3 -> calculate.multiply(number1, number2);
+                case 4 -> calculate.divide(number1, number2);
+                case 5 -> calculate.remainder(number1, number2);
+                default -> System.out.println("calculation failed... I wonder why...");
             }
 
             Scanner input4 = new Scanner(System.in);
