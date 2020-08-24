@@ -7,6 +7,7 @@ public class MainC extends MainO{
         calculate.subtract(5, 4);
         calculate.multiply(4, 5);
         calculate.divide(5, 5);
+        calculate.remainder(5 , 4);
 
 
     }

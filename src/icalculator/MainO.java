@@ -22,4 +22,8 @@ public class MainO {
         c = a / b;
         System.out.println("The result is "+c);
     }
+    public void remainder(int a, int b){
+        c = a % b;
+        System.out.println("The result is "+c);
+    }
 }
